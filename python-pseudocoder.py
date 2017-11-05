@@ -1,5 +1,5 @@
 
-#Python-to-AQA-psudocode converter
+#Python-to-AQA-pseudocode converter
 #By Andrew Mulholland aka gbaman
 
 #    This program is free software: you can redistribute it and/or modify
@@ -145,13 +145,13 @@ def wordReplacer(svgfile, linesToAvoid, clues, charCheck = True, removeEndChar =
     return svgfile
 
 
-def writeTextFile(svgfile, name = "/Users/andrew/PycharmProjects/Experiments/psudocode/pythonfixed.py"):
+def writeTextFile(svgfile, name = # path to pseudocode file):
     """
     Writes the final list to a text file.
     Adds a newline character (\n) to the end of every sublist in the file.
     Then writes the string to the text file.
     """
-    name = name[0:len(name)-3] + "-Psudocode" + name[(len(name)-3) : len(name)]
+    name = name[0:len(name)-3] + "-Pseudocode" + name[(len(name)-3) : len(name)]
     file = open(name, 'w')
     mainstr = ""
     for i in range(0, len(svgfile)):
@@ -160,7 +160,7 @@ def writeTextFile(svgfile, name = "/Users/andrew/PycharmProjects/Experiments/psu
     file.close()
     print("")
     print("------------------------")
-    print("Psudocode file generated")
+    print("Pseudocode file generated")
     print("The file can be found at " + name)
     print("------------------------")
     print("")
